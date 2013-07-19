@@ -28,7 +28,6 @@ This schema, was developed for Kurunt, the scalable message processing framework
 npm install uid-number-bands
 ```
 
-
 ### Usage
 
 ```js
