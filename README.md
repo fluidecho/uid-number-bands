@@ -25,7 +25,7 @@ This schema, was developed for Kurunt, the scalable message processing framework
 ### Usage
 
 ```js
-var uidNumberBands = require(‘uid-number-bands');
+var uidNumberBands = require('uid-number-bands');
 
 var BAND = 0;
 var BANDS = 100;
@@ -51,5 +51,4 @@ uidNumberBands.init(BAND, BANDS, function() {
 ### License
 
 Apache 2.0
-
 
