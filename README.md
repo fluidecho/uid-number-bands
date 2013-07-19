@@ -1,6 +1,6 @@
 ## Unique ID number generator within band ranges
 
-Unique identifier (ID) number generator within band ranges, by multiple generators in sequential order. Generated as a node.js module, however could be adapted for other systems.
+Unique identifier (ID) number generator within band ranges, by multiple generators in sequential order. A node.js module, however could be adapted for other systems.
 
 ### Goals
 
@@ -21,6 +21,12 @@ This schema, was developed for Kurunt, the scalable message processing framework
 1374207372000000003  
 ...  
 
+
+### Installation
+
+```js
+npm install uid-number-bands
+```
 
 ### Usage
 
