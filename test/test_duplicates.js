@@ -1,7 +1,7 @@
 // test for duplicate ids
 
 var util 			= require('util');
-var uidNumberBands 	= require('./index');
+var uidNumberBands 	= require('.././index');
 
 
 var BAND 			= 99;
