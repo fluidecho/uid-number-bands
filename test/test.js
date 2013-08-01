@@ -10,8 +10,6 @@ var BANDS 	= 100;
 
 uidNumberBands.init(BAND, BANDS, function() {
 
-	var id 	= 0;
-	var ids 	= {};
 	var x 	= 0;
 	var total	= 30;
 
