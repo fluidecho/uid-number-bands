@@ -1,6 +1,6 @@
-// example 
+// test 2
 
-var uidNumberBands = require('.././index');
+var uidNumberBands 	= require('.././index');
 
 var BAND = 99;
 var BANDS = 100;

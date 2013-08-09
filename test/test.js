@@ -1,28 +1,28 @@
 // test
 
-var util 	= require('util');
-var uidNumberBands 	= require('.././index');
+var util  = require('util');
+var uidNumberBands  = require('.././index');
 
 
-var BAND 	= 0;
-var BANDS 	= 100;
+var BAND  = 0;
+var BANDS   = 100;
 
 
 uidNumberBands.init(BAND, BANDS, function() {
 
-	var x 	= 0;
-	var total	= 30;
+  var x   = 0;
+  var total = 30;
 
-	var repeat 	= setInterval(function() {
+  var repeat  = setInterval(function() {
 
-		console.log( uidNumberBands.make() );		// id
+    console.log( uidNumberBands.make() );   // id
 
-		x++;
-		if ( x >= total ) {
-			clearInterval(repeat);
-		}
+    x++;
+    if ( x >= total ) {
+      clearInterval(repeat);
+    }
 
-	}, 50 );
+  }, 50 );
 
 });
 

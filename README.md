@@ -36,15 +36,13 @@ var uidNumberBands = require('uid-number-bands');
 var BAND = 0;
 var BANDS = 100;
 
-uidNumberBands.init(BAND, BANDS, function() {
+uidNumberBands.init(BAND, BANDS);
 
-	var id = uidNumberBands.make();
-	console.log( 'id: ' + id );
+var id = uidNumberBands.make();
+console.log( 'id: ' + id );
 	
-	var idNormalized = uidNumberBands.normalize(id);
-	console.log( 'idNormalized: ' + idNormalized );
-	
-});
+var idNormalized = uidNumberBands.normalize(id);
+console.log( 'idNormalized: ' + idNormalized );
 
 ```
 

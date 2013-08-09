@@ -1,7 +1,7 @@
 { 
 "name": "uid-number-bands", 
 "description": "Unique ID number generator within band ranges.", 
-"version": "0.0.5", 
+"version": "0.0.6", 
 "author": "Mark W. B. Ashcroft <mark@kurunt.com> (http://kurunt.com)", 
 "contributors": [
   { "name": "Mark W. B. Ashcroft", "email": "mark@kurunt.com" }
