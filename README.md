@@ -52,7 +52,9 @@ BANDS (integer) represents the maximum number of generators. BANDS is divisible 
 
 BAND (integer) represents the generator being used.  
 
-So if BANDS = 100 then; (999,999,999 + 1) / 100 = 10,000,000 maximum IDs per second per generator (band).
+So if BANDS = 100 then; (999,999,999 + 1) / 100 = 10,000,000 maximum IDs per second per generator (band).  
+
+The ID returned combines unix time and the ID, for example: 1382454272 & 999999999 = "1382454272999999999"
 
 ```
 100 BANDS = 10,000,000 IDs per second.
