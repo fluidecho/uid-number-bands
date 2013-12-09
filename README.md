@@ -37,10 +37,10 @@ var util = require('util');
 var BAND = 0;
 var BANDS = 100;
 
-// [band, bands, start id at 1, callback function (optional)].
+// [band, bands, boolean: start id at 1, callback function (optional)].
 uidNumberBands.init(BAND, BANDS);
 
-// uidNumberBands.make(spacing) returns id object: id.uid, id.idn, id.normalized_uid, id.unixtime, id.freshsec.
+// uidNumberBands.make(spacing) returns id object: id.uid, id.idn, id.unixtime, id.normalized_uid, id.freshsec.
 var id = uidNumberBands.make();
 console.log('set id: ' + util.inspect(id));
 
@@ -58,7 +58,7 @@ BAND (integer) represents the generator being used.
 
 So if BANDS = 100 then; (999,999,999 + 1) / 100 = 10,000,000 maximum IDs per second per generator (band).  
 
-The ID returned combines unix time and the ID, for example: 1382454272 & 999999999 = "1382454272999999999"
+The UID returned combines unixtime and the IDN (padded), for example: 1382454272 & 999999999 = "1382454272999999999"
 
 ```
 100 BANDS = 10,000,000 IDs per second.

@@ -6,7 +6,7 @@ var util = require('util');
 var BAND = 0;
 var BANDS = 100;
 
-// [band, bands, start id at 1, callback function (optional)].
+// [band, bands, boolean: start id at 1, callback function (optional)].
 uidNumberBands.init(BAND, BANDS, true);
 
 // uidNumberBands.make(spacing) returns id object: id.uid, id.idn, id.normalized_uid, id.unixtime, id.freshsec.
