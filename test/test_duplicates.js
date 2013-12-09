@@ -8,7 +8,7 @@ var BAND      = 99;
 var BANDS       = 100;
 
 
-uidNumberBands.init(BAND, BANDS, function() {
+uidNumberBands.init(BAND, BANDS, false, function() {
 
   var id    = 0;
   var ids     = {};
@@ -18,7 +18,7 @@ uidNumberBands.init(BAND, BANDS, function() {
 
   for ( x = 0; x <= total; x++ ) {
 
-    id  = uidNumberBands.make(spacing);
+    id  = uidNumberBands.make(spacing).uid;
 
     if ( typeof ids[id] == 'undefined' ) {
       ids[id] = 1;
@@ -38,5 +38,4 @@ uidNumberBands.init(BAND, BANDS, function() {
   }
 
 });
-
 
